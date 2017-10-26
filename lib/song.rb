@@ -26,6 +26,7 @@ class Song
       unless @@artists.include?(x)
         unique_artists << x
       end
+    end
   end
 
 end
