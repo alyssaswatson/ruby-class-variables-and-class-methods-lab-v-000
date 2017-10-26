@@ -21,12 +21,7 @@ class Song
   end
 
   def self.artists
-    unique_artists = []
-    @@artists.each do |x|
-      unless @@artists.include?(x)
-        unique_artists << x
-      end
-    end
+    @@artists.uniq
   end
 
 end
